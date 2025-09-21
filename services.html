@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Care - Services</title>
+  <meta name="description" content="Our warm and friendly dog care services including walking, grooming, boarding, and training." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="opacity-0 transition-opacity duration-700">
+  <header class="fixed top-0 left-0 w-full z-50">
+    <nav class="w-full bg-black/20 backdrop-blur bg-black/20 text-white/90 border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <span class="inline-block h-8 w-8 rounded-full bg-amber-400"></span>
+          <a href="index.html" class="text-xl font-semibold tracking-wide">Dog Care</a>
+        </div>
+        <button id="nav-toggle" aria-label="Open Menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-300 ease-in-out focus:outline-none">
+          <span class="block w-5 h-0.5 bg-white rounded-sm transform transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transform transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transform transition-all duration-300"></span>
+        </button>
+        <ul id="nav-links" class="hidden md:flex items-center gap-8 uppercase text-sm tracking-wider">
+          <li><a href="index.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Home</a></li>
+          <li><a href="services.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Services</a></li>
+          <li><a href="about.html" class="transition-all duration-300 ease-in-out hover:brightness-110">About Us</a></li>
+          <li><a href="contact.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Contact Us</a></li>
+        </ul>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-black/70">
+        <ul class="px-4 py-3 space-y-2 text-white/90">
+          <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-white/10">Home</a></li>
+          <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-white/10">Services</a></li>
+          <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-white/10">About Us</a></li>
+          <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-white/10">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-100/60">
+    <img src="https://images.pexels.com/photos/5255229/pexels-photo-5255229.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Services hero" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center max-w-2xl px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">Our Services</h1>
+      <p class="text-white/90 text-lg md:text-xl mb-6">From daily walks to grooming and boarding, we tailor care to your dog's needs.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <main class="py-16 bg-white scroll-animate">
+    <section class="max-w-6xl mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Service Card 1 -->
+        <article class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-in-out p-5">
+          <img src="https://pixabay.com/get/g4661bccf3e45009c5c3a184f3ef277de57dac114acd60de04fbcf5fd236f4dd4aa6180eab82bd7521d2775203fd38d9587041f1ee4fcde2d34db39986c77d8b3_640.jpg" alt="Dog walking icon" class="w-12 h-12 mb-3"/>
+          <h3 class="text-xl font-semibold mb-2">Walking</h3>
+          <p class="text-sm text-gray-600">Keep pups active with safe, supervised walks tailored to energy level.</p>
+        </article>
+        <!-- Service Card 2 -->
+        <article class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-in-out p-5">
+          <img src="https://pixabay.com/get/g00a960765304fad9683debe9a9676a02bf03adfe9c36d08fa7b9c236903ccf1227c00fda542c26dd6dcb99135fdc34e981caf41022b3fc87deef84fbb1b84136_640.jpg" alt="Grooming icon" class="w-12 h-12 mb-3"/>
+          <h3 class="text-xl font-semibold mb-2">Grooming</h3>
+          <p class="text-sm text-gray-600">Gentle baths, trimming, and brushing to keep coats healthy and shiny.</p>
+        </article>
+        <!-- Service Card 3 -->
+        <article class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-in-out p-5">
+          <img src="https://images.unsplash.com/photo-1690687198652-c89f6f389e39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxjb3p5JTIwYm9hcmRpbmclMjBzZXR1cHxlbnwwfDB8fHwxNzU4NDY5OTcwfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Boarding icon" class="w-12 h-12 mb-3"/>
+          <h3 class="text-xl font-semibold mb-2">Boarding</h3>
+          <p class="text-sm text-gray-600">Safe, comfy lodging with enrichment and updates during stay.</p>
+        </article>
+        <!-- Service Card 4 -->
+        <article class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-in-out p-5">
+          <img src="https://pixabay.com/get/g21b3366ee7b9c0ec736bac47ef6fa75bc1b5ea8a78646367bf6a0b195ef0b67212b64b319ff3ed8cd16654ccb6d49f28c64f5ad4985394273f482137d80d3d07_640.jpg" alt="Training icon" class="w-12 h-12 mb-3"/>
+          <h3 class="text-xl font-semibold mb-2">Training</h3>
+          <p class="text-sm text-gray-600">Positive-reinforcement sessions to boost good behavior and confidence.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-12 pb-8 mt-8">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-2">
+        <div class="flex items-center space-x-2 text-xl font-semibold">
+          <span class="h-7 w-7 rounded-full bg-amber-400"></span>
+          <span>Dog Care</span>
+        </div>
+        <p class="text-sm text-gray-300">Warm, friendly care for every canine companion.</p>
+      </div>
+      <nav aria-label="Footer links" class="space-y-2">
+        <h4 class="font-semibold">Quick Links</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:underline transition-all duration-300">Home</a></li>
+          <li><a href="services.html" class="hover:underline transition-all duration-300">Services</a></li>
+          <li><a href="about.html" class="hover:underline transition-all duration-300">About Us</a></li>
+          <li><a href="contact.html" class="hover:underline transition-all duration-300">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="space-y-2">
+        <h4 class="font-semibold">Newsletter</h4>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input aria-label="Email" type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-md bg-white/90 text-gray-900"/>
+          <button type="submit" class="px-4 py-2 rounded-md bg-amber-500 text-white transition-all duration-300 ease-in-out hover:scale-105">Subscribe</button>
+        </form>
+        <p class="text-sm text-gray-400">From Hyderabad, Telangana, India</p>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-700" />
+    <p class="text-center text-sm text-gray-400">© 2025 Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    window.addEventListener('load', () => {
+      document.body.classList.remove('opacity-0');
+      document.body.classList.add('opacity-100');
+    });
+    const sections = document.querySelectorAll('.scroll-animate');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.remove('opacity-0','-translate-y-6');
+          e.target.classList.add('opacity-100','translate-y-0');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(sec => {
+      sec.classList.add('opacity-0','-translate-y-6','transition','duration-600','ease-out');
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
