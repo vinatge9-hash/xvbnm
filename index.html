@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Care - Home</title>
+  <meta name="description" content="Warm & friendly dog care services including walking, grooming, boarding, and training." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="opacity-0 transition-opacity duration-700">
+  <!--[if lte IE 11]>
+    <p>Your browser is not fully supported. Please upgrade for the best experience.</p>
+  <![endif]-->
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50">
+    <nav class="w-full bg-black/20 backdrop-blur bg-black/20 text-white/90 border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <span class="inline-block h-8 w-8 rounded-full bg-amber-400"></span>
+          <a href="index.html" class="text-xl font-semibold tracking-wide">Dog Care</a>
+        </div>
+        <button id="nav-toggle" aria-label="Open Menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-300 ease-in-out focus:outline-none">
+          <span class="block w-5 h-0.5 bg-white rounded-sm transform transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transform transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transform transition-all duration-300"></span>
+        </button>
+        <ul id="nav-links" class="hidden md:flex items-center gap-8 uppercase text-sm tracking-wider">
+          <li><a href="index.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Home</a></li>
+          <li><a href="services.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Services</a></li>
+          <li><a href="about.html" class="transition-all duration-300 ease-in-out hover:brightness-110">About Us</a></li>
+          <li><a href="contact.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-black/70">
+        <ul class="px-4 py-3 space-y-2 text-white/90">
+          <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-white/10">Home</a></li>
+          <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-white/10">Services</a></li>
+          <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-white/10">About Us</a></li>
+          <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-white/10">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-100/60">
+    <img src="https://images.pexels.com/photos/6468671/pexels-photo-6468671.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Hero background with a happy dog" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center max-w-2xl px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+        We care for your<br>
+        <span class="text-amber-400">best friend</span>
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl mb-6">Friendly, reliable dog care tailored to your pup’s personality—walks, grooming, boarding, and more.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="services.html" class="inline-block bg-amber-500 text-white px-6 py-3 rounded-full transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">Explore Services</a>
+        <a href="contact.html" class="inline-block bg-white/90 text-gray-900 px-6 py-3 rounded-full border border-white transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-105">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (Home) -->
+  <section id="testimonials" class="py-16 bg-white scroll-animate">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+      <div class="text-center mb-6">
+        <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-sm font-semibold uppercase tracking-wide">Testimonials</span>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold">What our friends say</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <article class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-in-out p-5">
+          <div class="text-yellow-400 mb-2" aria-label="star rating">
+            <svg width="16" height="16" fill="currentColor" class="inline-block">
+              <circle cx="8" cy="8" r="8" fill="currentColor" />
+            </svg>
+            <svg width="16" height="16" fill="currentColor" class="inline-block" style="color:#f6d13d"><polygon points="8,1 10,6 15,6 11.5,9 13,14 8,11 3,14 4.5,9 1,6 6,6"/></svg>
+            <svg width="16" height="16" fill="currentColor" class="inline-block" style="color:#f6d13d"><polygon points="8,1 10,6 15,6 11.5,9 13,14 8,11 3,14 4.5,9 1,6 6,6"/></svg>
+            <svg width="16" height="16" fill="currentColor" class="inline-block" style="color:#f6d13d"><polygon points="8,1 10,6 15,6 11.5,9 13,14 8,11 3,14 4.5,9 1,6 6,6"/></svg>
+            <svg width="16" height="16" fill="currentColor" class="inline-block" style="color:#f6d13d"><polygon points="8,1 10,6 15,6 11.5,9 13,14 8,11 3,14 4.5,9 1,6 6,6"/></svg>
+          </div>
+          <p class="text-gray-700 italic mb-3">"Dog Care has been a blessing for our busy family. Our pup comes back happy and calm."</p>
+          <p class="font-semibold">Ava K.</p>
+          <p class="text-sm text-gray-500">Hyderabad, India</p>
+        </article>
+        <!-- Card 2 -->
+        <article class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-in-out p-5">
+          <div class="text-yellow-400 mb-2" aria-label="star rating">
+            <span>★★★★★</span>
+          </div>
+          <p class="text-gray-700 italic mb-3">"Reliable and sweet staff. Our retriever loves the daily walks and grooming sessions."</p>
+          <p class="font-semibold">Rohit S.</p>
+          <p class="text-sm text-gray-500">Hyderabad, India</p>
+        </article>
+        <!-- Card 3 -->
+        <article class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300 ease-in-out p-5">
+          <div class="text-yellow-400 mb-2" aria-label="star rating">
+            <span>★★★★★</span>
+          </div>
+          <p class="text-gray-700 italic mb-3">"Our puppy's first boarding experience was fantastic. Such gentle care and updates."</p>
+          <p class="font-semibold">Meera N.</p>
+          <p class="text-sm text-gray-500">Hyderabad, India</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-12 pb-8 mt-8">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand / Socials -->
+      <div class="space-y-2">
+        <div class="flex items-center space-x-2 text-xl font-semibold">
+          <span class="h-7 w-7 rounded-full bg-amber-400"></span>
+          <span>Dog Care</span>
+        </div>
+        <p class="text-sm text-gray-300">Caring for dogs with warmth, trust, and wagging tails.</p>
+      </div>
+      <!-- Quick Links -->
+      <nav aria-label="Footer links" class="space-y-2">
+        <h4 class="font-semibold">Quick Links</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:underline transition-all duration-300">Home</a></li>
+          <li><a href="services.html" class="hover:underline transition-all duration-300">Services</a></li>
+          <li><a href="about.html" class="hover:underline transition-all duration-300">About Us</a></li>
+          <li><a href="contact.html" class="hover:underline transition-all duration-300">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- Newsletter Signup -->
+      <div class="space-y-2">
+        <h4 class="font-semibold">Newsletter</h4>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input aria-label="Email" type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-md bg-white/90 text-gray-900"/>
+          <button type="submit" class="px-4 py-2 rounded-md bg-amber-500 text-white transition-all duration-300 ease-in-out hover:scale-105">Subscribe</button>
+        </form>
+        <p class="text-sm text-gray-400">Get tips and updates from Hyderabad, IN.</p>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-700" />
+    <p class="text-center text-sm text-gray-400">© 2025 Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Fade-in body on load
+    window.addEventListener('load', () => {
+      document.body.classList.remove('opacity-0');
+      document.body.classList.add('opacity-100');
+    });
+
+    // Scroll-based reveal for sections with class 'scroll-animate'
+    const sections = document.querySelectorAll('.scroll-animate');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.remove('opacity-0', 'translate-y-6');
+          e.target.classList.add('opacity-100', 'translate-y-0');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(sec => {
+      // initial state
+      sec.classList.add('opacity-0', '-translate-y-6', 'transition', 'duration-600', 'ease-out');
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
