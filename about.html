@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Care - About Us</title>
+  <meta name="description" content="Learn about our warm, friendly approach to dog care and meet the team." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="opacity-0 transition-opacity duration-700">
+  <header class="fixed top-0 left-0 w-full z-50">
+    <nav class="w-full bg-black/20 backdrop-blur bg-black/20 text-white/90 border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <span class="h-8 w-8 rounded-full bg-amber-400"></span>
+          <a href="index.html" class="text-xl font-semibold">Dog Care</a>
+        </div>
+        <button id="nav-toggle" aria-label="Open Menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-300 ease-in-out focus:outline-none">
+          <span class="block w-5 h-0.5 bg-white rounded-sm transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transition-all duration-300"></span>
+        </button>
+        <ul id="nav-links" class="hidden md:flex items-center gap-8 uppercase text-sm tracking-wider">
+          <li><a href="index.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Home</a></li>
+          <li><a href="services.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Services</a></li>
+          <li><a href="about.html" class="transition-all duration-300 ease-in-out hover:brightness-110">About Us</a></li>
+          <li><a href="contact.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Contact Us</a></li>
+        </ul>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-black/70">
+        <ul class="px-4 py-3 space-y-2 text-white/90">
+          <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-white/10">Home</a></li>
+          <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-white/10">Services</a></li>
+          <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-white/10">About Us</a></li>
+          <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-white/10">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-100/60">
+    <img src="https://images.unsplash.com/photo-1601758123927-4f7acc7da589?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8ZnJpZW5kbHklMjBkb2clMjBhbmQlMjBjYXJlZ2l2ZXIlMjBpbiUyMGElMjBjb3p5JTIwaG9tZXxlbnwwfDB8fHwxNzU4NDY5OTcxfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="About us hero" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center max-w-2xl px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">Meet the Team</h1>
+      <p class="text-white/90 text-lg md:text-xl">We’re a warm bunch dedicated to making dogs happier, healthier, and more loved.</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <main class="py-16 bg-white scroll-animate">
+    <section class="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-2xl font-semibold mb-3">Our Story</h2>
+        <p class="text-gray-700">Dog Care began from a simple belief: every wag is a sign of trust. We built a cozy, compassionate environment where dogs feel safe, loved, and understood. Based in Hyderabad, our team brings years of hands-on dog experience with a focus on positive reinforcement and empathy.</p>
+      </div>
+      <img src="https://images.pexels.com/photos/7469230/pexels-photo-7469230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Dog care team" class="rounded-lg shadow-md" />
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-12 pb-8 mt-8">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-2">
+        <div class="flex items-center space-x-2 text-xl font-semibold">
+          <span class="h-7 w-7 rounded-full bg-amber-400"></span>
+          <span>Dog Care</span>
+        </div>
+        <p class="text-sm text-gray-300">Warm, friendly approach to dog care in Hyderabad.</p>
+      </div>
+      <nav aria-label="Footer links" class="space-y-2">
+        <h4 class="font-semibold">Quick Links</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:underline transition-all duration-300">Home</a></li>
+          <li><a href="services.html" class="hover:underline transition-all duration-300">Services</a></li>
+          <li><a href="about.html" class="hover:underline transition-all duration-300">About Us</a></li>
+          <li><a href="contact.html" class="hover:underline transition-all duration-300">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="space-y-2">
+        <h4 class="font-semibold">Newsletter</h4>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input aria-label="Email" type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-md bg-white/90 text-gray-900"/>
+          <button type="submit" class="px-4 py-2 rounded-md bg-amber-500 text-white transition-all duration-300 ease-in-out hover:scale-105">Subscribe</button>
+        </form>
+        <p class="text-sm text-gray-400">From Hyderabad, Telangana, India</p>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-700" />
+    <p class="text-center text-sm text-gray-400">© 2025 Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    window.addEventListener('load', () => { document.body.classList.remove('opacity-0'); document.body.classList.add('opacity-100'); });
+    const sections = document.querySelectorAll('.scroll-animate');
+    const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.remove('opacity-0','-translate-y-6'); e.target.classList.add('opacity-100','translate-y-0'); } }); }, { threshold: 0.1 });
+    sections.forEach(sec => { sec.classList.add('opacity-0','-translate-y-6','transition','duration-600','ease-out'); observer.observe(sec); });
+  </script>
+</body>
+</html>
