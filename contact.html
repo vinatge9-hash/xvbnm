@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Care - Contact Us</title>
+  <meta name="description" content="Contact Dog Care to schedule services or ask questions." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="opacity-0 transition-opacity duration-700">
+  <header class="fixed top-0 left-0 w-full z-50">
+    <nav class="w-full bg-black/20 backdrop-blur bg-black/20 text-white/90 border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <span class="h-8 w-8 rounded-full bg-amber-400"></span>
+          <a href="index.html" class="text-xl font-semibold">Dog Care</a>
+        </div>
+        <button id="nav-toggle" aria-label="Open Menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 transition-all duration-300 ease-in-out focus:outline-none">
+          <span class="block w-5 h-0.5 bg-white rounded-sm transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transition-all duration-300"></span>
+          <span class="block w-5 h-0.5 bg-white rounded-sm mt-1 transition-all duration-300"></span>
+        </button>
+        <ul id="nav-links" class="hidden md:flex items-center gap-8 uppercase text-sm tracking-wider">
+          <li><a href="index.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Home</a></li>
+          <li><a href="services.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Services</a></li>
+          <li><a href="about.html" class="transition-all duration-300 ease-in-out hover:brightness-110">About Us</a></li>
+          <li><a href="contact.html" class="transition-all duration-300 ease-in-out hover:brightness-110">Contact Us</a></li>
+        </ul>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-black/70">
+        <ul class="px-4 py-3 space-y-2 text-white/90">
+          <li><a href="index.html" class="block px-3 py-2 rounded hover:bg-white/10">Home</a></li>
+          <li><a href="services.html" class="block px-3 py-2 rounded hover:bg-white/10">Services</a></li>
+          <li><a href="about.html" class="block px-3 py-2 rounded hover:bg-white/10">About Us</a></li>
+          <li><a href="contact.html" class="block px-3 py-2 rounded hover:bg-white/10">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-100/60">
+    <img src="https://images.unsplash.com/photo-1677165304201-57c7ecb1614d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw4fHxmcmllbmRseSUyMGRvZyUyMGluJTIwYSUyMHN1bm55JTIwcm9vbXxlbnwwfDB8fHwxNzU4NDY5OTczfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Contact hero" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 text-center max-w-2xl px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">Get in Touch</h1>
+      <p class="text-white/90 text-lg md:text-xl">We’d love to help schedule care for your dog. Reach out to us anytime.</p>
+    </div>
+  </section>
+
+  <main class="py-12 bg-white scroll-animate">
+    <section class="max-w-4xl mx-auto px-4 md:px-6">
+      <form class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label class="flex flex-col">
+            <span class="text-sm font-medium text-gray-700 mb-1">Name</span>
+            <input type="text" placeholder="Your name" class="px-3 py-2 border border-gray-300 rounded"/>
+          </label>
+          <label class="flex flex-col">
+            <span class="text-sm font-medium text-gray-700 mb-1">Email</span>
+            <input type="email" placeholder="Your email" class="px-3 py-2 border border-gray-300 rounded"/>
+          </label>
+        </div>
+        <label class="flex flex-col">
+          <span class="text-sm font-medium text-gray-700 mb-1">Message</span>
+          <textarea rows="5" placeholder="Tell us about your dog's needs..." class="px-3 py-2 border border-gray-300 rounded"></textarea>
+        </label>
+        <button type="submit" class="inline-block bg-amber-500 text-white px-6 py-3 rounded-full transition-all duration-300 ease-in-out hover:scale-105">Send Message</button>
+      </form>
+      <div class="mt-6 text-sm text-gray-600">Or call us at +91-XXXXXXXXXX. Location: Hyderabad, Telangana, India.</div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white pt-12 pb-8 mt-8">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-2">
+        <div class="flex items-center space-x-2 text-xl font-semibold">
+          <span class="h-7 w-7 rounded-full bg-amber-400"></span>
+          <span>Dog Care</span>
+        </div>
+        <p class="text-sm text-gray-300">Warm and friendly dog care in Hyderabad.</p>
+      </div>
+      <nav aria-label="Footer links" class="space-y-2">
+        <h4 class="font-semibold">Quick Links</h4>
+        <ul class="space-y-1 text-sm text-gray-300">
+          <li><a href="index.html" class="hover:underline transition-all duration-300">Home</a></li>
+          <li><a href="services.html" class="hover:underline transition-all duration-300">Services</a></li>
+          <li><a href="about.html" class="hover:underline transition-all duration-300">About Us</a></li>
+          <li><a href="contact.html" class="hover:underline transition-all duration-300">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="space-y-2">
+        <h4 class="font-semibold">Newsletter</h4>
+        <form class="flex flex-col sm:flex-row gap-2">
+          <input aria-label="Email" type="email" placeholder="Your email" class="flex-1 px-3 py-2 rounded-md bg-white/90 text-gray-900"/>
+          <button type="submit" class="px-4 py-2 rounded-md bg-amber-500 text-white transition-all duration-300 ease-in-out hover:scale-105">Subscribe</button>
+        </form>
+        <p class="text-sm text-gray-400">From Hyderabad, Telangana, India</p>
+      </div>
+    </div>
+    <hr class="my-6 border-gray-700" />
+    <p class="text-center text-sm text-gray-400">© 2025 Hyderabad, Telangana, India</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle?.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    window.addEventListener('load', () => { document.body.classList.remove('opacity-0'); document.body.classList.add('opacity-100'); });
+    const sections = document.querySelectorAll('.scroll-animate');
+    const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.remove('opacity-0','-translate-y-6'); e.target.classList.add('opacity-100','translate-y-0'); } }); }, { threshold: 0.1 });
+    sections.forEach(sec => { sec.classList.add('opacity-0','-translate-y-6','transition','duration-600','ease-out'); observer.observe(sec); });
+  </script>
+</body>
+</html>
